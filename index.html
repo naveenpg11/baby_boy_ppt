@@ -1,0 +1,246 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Baby Boy Names - Dhyan & Skandha</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Segoe UI', sans-serif; overflow: hidden; background: #000; }
+  .slide {
+    display: none; width: 100vw; height: 100vh;
+    position: relative; justify-content: center;
+    align-items: center; flex-direction: column;
+    text-align: center; padding: 40px;
+  }
+  .slide.active { display: flex; }
+  .bg {
+    position: absolute; inset: 0;
+    background-size: cover; background-position: center;
+    filter: blur(8px) brightness(0.4);
+    transform: scale(1.05); z-index: 0;
+  }
+  .content {
+    position: relative; z-index: 1;
+    background: rgba(255,255,255,0.13);
+    backdrop-filter: blur(14px);
+    border-radius: 28px; padding: 50px 65px;
+    max-width: 820px;
+    border: 1px solid rgba(255,255,255,0.25);
+    box-shadow: 0 25px 70px rgba(0,0,0,0.4);
+  }
+  h1 { font-size: 3.4em; color: #fff; font-weight: 900; margin-bottom: 12px; text-shadow: 0 2px 12px rgba(0,0,0,0.5); }
+  h2 { font-size: 2.6em; color: #fff; font-weight: 800; margin-bottom: 10px; }
+  .tamil { font-size: 2.2em; color: #ffd700; margin-bottom: 14px; letter-spacing: 2px; }
+  .meaning { font-size: 1.2em; color: #f0f0f0; margin-bottom: 18px; line-height: 1.7; }
+  .tags { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 18px; }
+  .tag {
+    background: rgba(255,255,255,0.18);
+    border: 1px solid rgba(255,255,255,0.35);
+    color: #fff; padding: 7px 20px;
+    border-radius: 50px; font-size: 0.92em;
+  }
+  .subtitle { font-size: 1.35em; color: #e8d5ff; margin-top: 12px; }
+  .slide-num {
+    position: fixed; top: 20px; right: 30px;
+    color: rgba(255,255,255,0.5); font-size: 0.9em; z-index: 100;
+  }
+  .nav {
+    position: fixed; bottom: 28px; left: 50%; transform: translateX(-50%);
+    display: flex; gap: 16px; z-index: 100;
+  }
+  .nav button {
+    background: rgba(255,255,255,0.18);
+    border: 2px solid rgba(255,255,255,0.45);
+    color: white; padding: 10px 30px;
+    border-radius: 50px; font-size: 1em;
+    cursor: pointer; backdrop-filter: blur(6px);
+    transition: all 0.3s;
+  }
+  .nav button:hover { background: rgba(255,255,255,0.32); }
+  .dots {
+    position: fixed; bottom: 88px; left: 50%; transform: translateX(-50%);
+    display: flex; gap: 9px; z-index: 100;
+  }
+  .dot {
+    width: 10px; height: 10px; border-radius: 50%;
+    background: rgba(255,255,255,0.35); cursor: pointer; transition: all 0.3s;
+  }
+  .dot.active { background: #fff; transform: scale(1.35); }
+
+  /* Slide backgrounds */
+  .slide-1 .bg { background-image: url('https://images.unsplash.com/photo-1519689680058-324335c77eba?w=1400'); }
+  .slide-2 .bg { background-image: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1400'); }
+  .slide-3 .bg { background-image: url('https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=1400'); }
+  .slide-4 .bg { background-image: url('https://images.unsplash.com/photo-1475274047050-1d0c0975864c?w=1400'); }
+  .slide-5 .bg { background-image: url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1400'); }
+  .slide-6 .bg { background-image: url('https://images.unsplash.com/photo-1545126986-be95a04c3f3c?w=1400'); }
+
+  /* Slide gradient overlays */
+  .slide-1 .content { background: rgba(80,0,120,0.25); }
+  .slide-2 .content { background: rgba(180,60,0,0.22); }
+  .slide-3 .content { background: rgba(0,80,160,0.22); }
+  .slide-4 .content { background: rgba(0,100,80,0.22); }
+  .slide-5 .content { background: rgba(120,0,100,0.22); }
+  .slide-6 .content { background: rgba(60,30,0,0.3); }
+</style>
+</head>
+<body>
+
+<!-- Slide 1: Title -->
+<div class="slide slide-1 active">
+  <div class="bg"></div>
+  <div class="content">
+    <div style="font-size:3.5em; margin-bottom:14px;">👶🏽</div>
+    <h1>Baby Boy Names</h1>
+    <p class="subtitle">Celebrating Dhyan & Skandha's Little One 💙</p>
+    <div class="tags" style="margin-top:22px;">
+      <span class="tag">🏸 Fitness & Badminton</span>
+      <span class="tag">🎨 Art & Japanese Culture</span>
+      <span class="tag">🏛️ Tamil Heritage</span>
+      <span class="tag">🙏 Murugan Devotion</span>
+    </div>
+  </div>
+</div>
+
+<!-- Slide 2: Veyyon -->
+<div class="slide slide-2">
+  <div class="bg"></div>
+  <div class="content">
+    <div class="tamil">வெய்யோன்</div>
+    <h2>Veyyon</h2>
+    <p class="meaning">
+      ☀️ <strong>The Sun</strong> — radiant, powerful, full of energy<br>
+      An ancient pre-Vedic Tamil name for the sun deity.<br>
+      <em style="color:#ffd700;">As bright and strong as the sun itself.</em>
+    </p>
+    <div class="tags">
+      <span class="tag">🌞 Sun Energy</span>
+      <span class="tag">💪 Athletic Spirit</span>
+      <span class="tag">🏛️ Pure Tamil</span>
+      <span class="tag">⚡ Powerful & Unique</span>
+    </div>
+  </div>
+</div>
+
+<!-- Slide 3: Dheera -->
+<div class="slide slide-3">
+  <div class="bg"></div>
+  <div class="content">
+    <div class="tamil">தீரா</div>
+    <h2>Dheera</h2>
+    <p class="meaning">
+      ⚔️ <strong>Brave & Steadfast</strong> — courageous, patient, composed<br>
+      A warrior's heart with a calm, focused mind.<br>
+      <em style="color:#ffd700;">The spirit of Murugan — young, bold, undefeated.</em>
+    </p>
+    <div class="tags">
+      <span class="tag">🦁 Courage</span>
+      <span class="tag">🧘 Inner Calm</span>
+      <span class="tag">🏸 Champion Spirit</span>
+      <span class="tag">🌟 Natural Leader</span>
+    </div>
+  </div>
+</div>
+
+<!-- Slide 4: Nilan -->
+<div class="slide slide-4">
+  <div class="bg"></div>
+  <div class="content">
+    <div class="tamil">நிலன்</div>
+    <h2>Nilan</h2>
+    <p class="meaning">
+      🌙 <strong>The Moon</strong> — serene, beautiful, wise<br>
+      Calm like the moon, gentle and deeply creative.<br>
+      <em style="color:#ffd700;">A poetic soul with an artist's heart.</em>
+    </p>
+    <div class="tags">
+      <span class="tag">🌙 Moon</span>
+      <span class="tag">🎨 Artistic Soul</span>
+      <span class="tag">💙 Serene & Composed</span>
+      <span class="tag">✨ Elegant</span>
+    </div>
+  </div>
+</div>
+
+<!-- Slide 5: Yaazhlan -->
+<div class="slide slide-5">
+  <div class="bg"></div>
+  <div class="content">
+    <div class="tamil">யாழ்லன்</div>
+    <h2>Yaazhlan</h2>
+    <p class="meaning">
+      🎵 <strong>The Musical One</strong> — from Yaazh, the ancient Tamil lute<br>
+      Art, music, culture and creative excellence.<br>
+      <em style="color:#ffd700;">Where Tamil heritage meets Japanese artistic spirit.</em>
+    </p>
+    <div class="tags">
+      <span class="tag">🎵 Music & Art</span>
+      <span class="tag">🎌 Japanese Vibe</span>
+      <span class="tag">📜 Tamil Heritage</span>
+      <span class="tag">🌸 Creative & Unique</span>
+    </div>
+  </div>
+</div>
+
+<!-- Slide 6: Thank You -->
+<div class="slide slide-6">
+  <div class="bg"></div>
+  <div class="content">
+    <div style="font-size:3em; margin-bottom:14px;">🙏</div>
+    <h2 style="color:#ffd700;">வாழ்த்துக்கள்!</h2>
+    <p class="meaning" style="margin-top:14px;">
+      Congratulations Dhyan & Skandha! 🎉<br>
+      Wishing your little one a life full of<br>
+      <strong>light, courage, art and endless joy 💙</strong>
+    </p>
+    <p style="color: #ffd700; margin-top: 24px; font-size: 1em; border-top: 1px solid rgba(255,255,255,0.2); padding-top: 18px;">
+      ✨ Powered by <strong>Perplexity.ai Pro</strong>
+    </p>
+  </div>
+</div>
+
+<!-- Slide number -->
+<div class="slide-num" id="slideNum">1 / 6</div>
+
+<!-- Dots -->
+<div class="dots" id="dots"></div>
+
+<!-- Nav buttons -->
+<div class="nav">
+  <button onclick="changeSlide(-1)">← Prev</button>
+  <button onclick="changeSlide(1)">Next →</button>
+</div>
+
+<script>
+  let current = 0;
+  const slides = document.querySelectorAll('.slide');
+  const dotsEl = document.getElementById('dots');
+  const numEl = document.getElementById('slideNum');
+
+  slides.forEach((_, i) => {
+    const d = document.createElement('div');
+    d.className = 'dot' + (i === 0 ? ' active' : '');
+    d.onclick = () => goTo(i);
+    dotsEl.appendChild(d);
+  });
+
+  function goTo(n) {
+    slides[current].classList.remove('active');
+    dotsEl.children[current].classList.remove('active');
+    current = (n + slides.length) % slides.length;
+    slides[current].classList.add('active');
+    dotsEl.children[current].classList.add('active');
+    numEl.textContent = (current + 1) + ' / ' + slides.length;
+  }
+
+  function changeSlide(dir) { goTo(current + dir); }
+
+  document.addEventListener('keydown', e => {
+    if (e.key === 'ArrowRight' || e.key === 'ArrowDown') changeSlide(1);
+    if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') changeSlide(-1);
+  });
+</script>
+</body>
+</html>
